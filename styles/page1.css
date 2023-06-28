@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pagina {
+    width: 360px; height: 640px;
+    position: absolute;
+    background: linear-gradient(180deg, #BFFFF7 71%, #4C8A81 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 10px
+}
+
+.Header {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.Header > h2 {
+    padding: 5px;
+}
+.Header > .material-symbols-outlined {
+    margin-left: 2px;
+}
+.Header > .material-symbols-outlined:hover {
+    color: white;
+    transition: 125ms;
+}
+.Nave {
+    margin-left: 20%;
+    text-align: center;
+}
+.Nave > a {
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.Nave > a:hover {
+    color: teal;
+}
+
+.rect1 {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    stroke: black;
+    background-color: rgba(76, 138, 129, 0.20);
+    margin-left: 10px; margin-right: 10px;
+}
+
+.main-text > img {
+    width: 374px;
+    height: 191px;
+}
+
+.Rodape > i > a {
+    height: 30px;
+}
+.Rodape > i > a > img {
+    width: 30px;
+    height: 30px;
+}
+.Rodape > i > a > img:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+}
+
