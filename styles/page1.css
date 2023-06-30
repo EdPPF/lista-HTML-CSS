@@ -29,6 +29,7 @@
     height: 100%;
 }
 .Title {
+    font-size: 2rem;
     text-align: left;
     margin-left: 1rem;
     left: 0;
@@ -37,14 +38,14 @@
 }
 .Nave > a {
     text-align: center;
-    /* margin-right: 5rem; */
-    /* right: 0; */
     position: absolute;
 
-    font-size: small;
+    background-color: #231123;
+    border-radius: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    color: #231123;
+    color: #EFF7FF;
     cursor: pointer;
 }
 .Nave > a:hover {
@@ -74,11 +75,66 @@ main {
     width: 100%;
     height: 100vh;
 }
+.next-page {
+    background-color: #231123;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EFF7FF;
+    border-radius: 10px;
+    color: #EFF7FF;
+    text-align: right;
+    margin-right: 1rem;
+    right: 0;
+    position: absolute;
+    font-size: x-large;
+    padding: 0.5rem;
+    max-width: 30%;
+}
+.page2-redirect {
+    text-decoration: none;
+    color:#FFBE0B;
+    cursor: pointer;
+}
+.page2-redirect:hover {
+    color: #FF006E;
+    transition: 0.25s;
+}
 .main-text > img {
     max-width: 100%;
-    /* width: 374px;
-    height: 191px; */
 }
+.main-content {
+    /* text-align: left;
+    margin-left: 1rem;
+    left: 0; */
+    position: absolute;
+    font-size: xx-large;
+    color: #EFF7FF;
+    background-color: #231123bb;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EFF7FF;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: fit-content;
+    max-width: 50%;
+}
+.spoon-redirect {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    text-decoration: none;
+    color: #FF006E;
+    cursor: pointer;
+}
+.spoon-redirect:hover {
+    color: #FFBE0B;
+    transition: 0.25s;
+}
+/* .spoon1image {
+    filter: blur(0.5rem);
+}
+.spoon1image:hover {
+    cursor: pointer;
+} */
 
 .Rodape {
     text-align: center;
@@ -90,7 +146,7 @@ main {
     color: #231123;
 }
 .Rodape > i > a > img {
-    width: 5rem;
+    width: 3.2rem;
     margin: 0 1em;
     transition: transform 0.5s ease;
 }

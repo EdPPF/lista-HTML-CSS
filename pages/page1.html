@@ -17,8 +17,8 @@
             <h2 class="Title">
                 EdPPF
             </h2>
-            <a id="nome" href="https://github.com/EdPPF" target="_blank">
-                EdPPF's GitHub
+            <a id="nome" href="https://github.com/EdPPF/lista-HTML-CSS" target="_blank">
+                This Project's GitHub
             </a>
             <span id="drop" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
@@ -27,10 +27,17 @@
     </header>
 
     <main>
-        Link para a
-        <a href="page2.html"> página 2 </a>.
+        <p class="next-page">
+            Ir para a
+            <a class="page2-redirect" href="page2.html"> página 2 </a>
+            >
+        </p>
         <section class="main-text">
-            <img id="spoon1" src="\images\01image.png" alt="Splatoon1_Poster">
+            <p class="main-content">
+                <a class="spoon-redirect" href="https://www.nintendo.co.jp/character/splatoon/en/" target="_blank">Splatoon</a><br>
+                Essa página serve só pra mostrar um jogo que tem consumido bastante do meu tempo :)
+            </p>
+            <img class="spoon1image" id="spoon1" src="\images\01image.png" alt="Splatoon1_Poster">
         </section>
     </main>
 
@@ -50,13 +57,15 @@
         }
 
         function checkWidth() {
-            if (window.innerWidth >= 375) {
+            if (window.innerWidth >= 480) {
                 nome.style.display = 'flex';
                 spoon1.style.display = 'flex';
+                drop.style.display = 'none';
             }
             else {
                 nome.style.display = 'none';
                 spoon1.style.display = 'none';
+                drop.style.display = 'flex';
             }
         }
     </script>

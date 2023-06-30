@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-/* .pagina {
-    position: absolute;
-    background: #231123;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-} */
-
 .Header {
     width: 100%;
     height: 3rem;
@@ -29,6 +23,7 @@
     height: 100%;
 }
 .Title {
+    font-size: 2rem;
     text-align: left;
     margin-left: 1rem;
     left: 0;
@@ -37,14 +32,14 @@
 }
 .Nave > a {
     text-align: center;
-    /* margin-right: 5rem; */
-    /* right: 0; */
     position: absolute;
 
-    font-size: small;
+    background-color: #231123;
+    border-radius: 10px;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    color: #231123;
+    color: #EFF7FF;
     cursor: pointer;
 }
 .Nave > a:hover {
@@ -74,10 +69,86 @@ main {
     width: 100%;
     height: 100vh;
 }
-.main-text > img {
-    max-width: 100%;
-    /* width: 374px;
-    height: 191px; */
+.next-page {
+    background-color: #231123;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EFF7FF;
+    border-radius: 10px;
+    color: #EFF7FF;
+    text-align: right;
+    margin-right: 1rem;
+    right: 0;
+    position: absolute;
+    font-size: x-large;
+    padding: 0.5rem;
+    max-width: 30%;
+}
+.page1-redirect {
+    text-decoration: none;
+    color: #FFBE0B;
+    cursor: pointer;
+}
+.page1-redirect:hover {
+    color: #EFF7FF;
+    transition: 0.25s;
+}
+
+.img1 {
+    /* max-width: 50%; */
+    width: 50%;
+    height: 100%;
+    /* background-color: #FFBE0B; */
+    text-align: right;
+    right: 0;
+    position: absolute;
+}
+#zelda {
+    width: 100%;
+}
+
+.main-content {
+    top: 5rem;
+    position: absolute;
+    font-size: xx-large;
+    color: #EFF7FF;
+    background-color: #231123bb;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EFF7FF;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: fit-content;
+    max-width: 60%;
+}
+.second-text {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    left: 0;
+    bottom: 20%;
+    position: absolute;
+    color: #EFF7FF;
+    font-size: xx-large;
+    background-color: #ffbe0b25;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #EFF7FF;
+    border-radius: 10px;
+    padding: 0.5rem;
+    /* height: 30%; */
+    width: fit-content;
+}
+.zelda-redirect {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    text-decoration: none;
+    color: #FFBE0B;
+    cursor: pointer;
+}
+.zelda-redirect:hover {
+    color: #EFF7FF;
+    transition: 0.25s;
 }
 
 .Rodape {
@@ -90,7 +161,7 @@ main {
     color: #231123;
 }
 .Rodape > i > a > img {
-    width: 5rem;
+    width: 3.2rem;
     margin: 0 1em;
     transition: transform 0.5s ease;
 }

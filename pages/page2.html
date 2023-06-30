@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="..\styles\page1.css">
+    <link rel="stylesheet" href="..\styles\page2.css">
     <title>PG.2 EdPPF</title>
     <link rel="shortcut icon" href="..\images\charlotte.png" type="image/x-icon">
 </head>
@@ -17,8 +17,8 @@
             <h2 class="Title">
                 EdPPF
             </h2>
-            <a id="nome" href="https://github.com/EdPPF" target="_blank">
-                EdPPF's GitHub
+            <a id="nome" href="https://github.com/EdPPF/lista-HTML-CSS" target="_blank">
+                This Project's GitHub
             </a>
             <span id="drop" class="material-symbols-outlined" onclick="clickMenu()">
                 menu
@@ -27,10 +27,22 @@
     </header>
 
     <main>
-        Link para a
-        <a href="page1.html"> página 1 </a>.
+        <div class="img1">
+            <img id="zelda" src="\images\zerudaCort.png" alt="ZeldaPoster">
+        </div>
+        <p class="next-page">
+            < Ir para a
+            <a class="page1-redirect" href="page1.html"> página 1 </a>.
+        </p>
         <section class="main-text">
-            oof
+            <p class="main-content">
+                <a class="zelda-redirect" href="https://www.nintendo.co.jp/character/zelda/en/history/index.html" target="_blank">Zelda Tears of the Kingdom</a><br>
+                Já essa página é para um jogo que está consumindo mais ainda do meu tempo...
+            </p>
+            <p class="second-text">
+                A imagem ao lado não é de Tears of the Kingdom, mas achei que é bem melhor que
+                 outra que tentei colocar aqui :/.
+            </p>
         </section>
     </main>
 
@@ -50,13 +62,15 @@
         }
 
         function checkWidth() {
-            if (window.innerWidth >= 375) {
+            if (window.innerWidth >= 480) {
                 nome.style.display = 'flex';
-                spoon1.style.display = 'flex';
+                zelda.style.display = 'flex';
+                drop.style.display = 'none';
             }
             else {
                 nome.style.display = 'none';
-                spoon1.style.display = 'none';
+                zelda.style.display = 'none';
+                drop.style.display = 'flex';
             }
         }
     </script>
