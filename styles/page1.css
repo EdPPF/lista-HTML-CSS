@@ -3,69 +3,109 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.pagina {
-    width: 360px; height: 640px;
+/* .pagina {
     position: absolute;
-    background: linear-gradient(180deg, #BFFFF7 71%, #4C8A81 100%);
+    background: #231123;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-    border-radius: 10px
-}
+} */
 
 .Header {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-.Header > h2 {
-    padding: 5px;
-}
-.Header > .material-symbols-outlined {
-    margin-left: 2px;
-}
-.Header > .material-symbols-outlined:hover {
-    color: white;
-    transition: 125ms;
+    width: 100%;
+    height: 3rem;
+    flex-shrink: 0;
+    border-bottom-style: ridge;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    background: rgba(175, 193, 214, 0.20);
 }
 .Nave {
-    margin-left: 20%;
-    text-align: center;
+    position: relative;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Title {
+    text-align: left;
+    margin-left: 1rem;
+    left: 0;
+    position: absolute;
+    color: #231123;
 }
 .Nave > a {
+    text-align: center;
+    /* margin-right: 5rem; */
+    /* right: 0; */
+    position: absolute;
+
     font-size: small;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #231123;
     cursor: pointer;
 }
 .Nave > a:hover {
-    color: teal;
+    color: darkslateblue;
+    transition: 125ms;
+}
+.material-symbols-outlined {
+    text-align: right;
+    margin-right: 1rem;
+    right: 0;
+    position: absolute;
+    color: #231123;
+    cursor: pointer;
+}
+.material-symbols-outlined:hover {
+    color: #EFF7FF;
+    transition: 125ms;
 }
 
-.rect1 {
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-    stroke: black;
-    background-color: rgba(76, 138, 129, 0.20);
-    margin-left: 10px; margin-right: 10px;
+main {
+    background-color: #231123;
+    
+    /* background-image: url(.\images\01image.png); */
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
-
 .main-text > img {
-    width: 374px;
-    height: 191px;
+    max-width: 100%;
+    /* width: 374px;
+    height: 191px; */
 }
 
-.Rodape > i > a {
-    height: 30px;
+.Rodape {
+    text-align: center;
+    background-color: #EFF7FF;
+    border-top-style: groove;
+}
+.Rodape > p {
+    font-size: xx-large;
+    color: #231123;
 }
 .Rodape > i > a > img {
-    width: 30px;
-    height: 30px;
+    width: 5rem;
+    margin: 0 1em;
+    transition: transform 0.5s ease;
 }
 .Rodape > i > a > img:hover {
-    width: 35px;
-    height: 35px;
+    transform: scale(1.2);
     transition: 0.5s;
 }
 
+@media screen and (min-width: 375px) {
+    i#drop {
+        display: none;
+    }
+
+    #nome {
+        width: 50%;
+        margin-top: 0rem;
+    }
+}

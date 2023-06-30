@@ -10,36 +10,57 @@
 </head>
 
 
-<body>
-    <div class="pagina">
+<body onresize="checkWidth()">
 
-        <div class="rect1">
-            <header class="Header">
-                <h2>EdPPF</h2>
-                <nav class="Nave">
-                    <a href="https://github.com/EdPPF" target="_blank">EdPPF's GitHub</a>
-                </nav>
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </header>
-        </div>
+    <header class="Header">
+        <nav class="Nave">
+            <h2 class="Title">
+                EdPPF
+            </h2>
+            <a id="nome" href="https://github.com/EdPPF" target="_blank">
+                EdPPF's GitHub
+            </a>
+            <span id="drop" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+            </span>
+        </nav>
+    </header>
 
-        <section>
-            <main>
-                Link para a
-                <a href="page2.html"> página 2 </a>.
-            </main>
-        </section>
-
+    <main>
+        Link para a
+        <a href="page2.html"> página 2 </a>.
         <section class="main-text">
-            <img src="\images\01image.png" alt="Splatoon1_Poster">
+            <img id="spoon1" src="\images\01image.png" alt="Splatoon1_Poster">
         </section>
+    </main>
 
-        <footer class="Rodape">
-            <i><a href="https://github.com/EdPPF" target="_blank"><img src="..\images\github-mark.png" alt="GitHub_repo">Made by EdPPF</a></i>
-        </footer>
-    </div>
+    <footer class="Rodape">
+        <p>EdPPF</p>
+        <i><a href="https://github.com/EdPPF" target="_blank"><img src="..\images\github-mark.png" alt="GitHub_repo"></a></i>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (nome.style.display == 'block') {
+                nome.style.display = 'none';
+            }
+            else {
+                nome.style.display = 'block';
+            }
+        }
+
+        function checkWidth() {
+            if (window.innerWidth >= 375) {
+                nome.style.display = 'flex';
+                spoon1.style.display = 'flex';
+            }
+            else {
+                nome.style.display = 'none';
+                spoon1.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
 
 </html>
